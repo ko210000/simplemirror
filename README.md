@@ -77,4 +77,4 @@ app/src/main/java/com/fei/simplemirror/
 - 应用图标目前是普通矢量图，不是自适应图标（adaptive icon），在部分启动器上会被系统加白底
 - 上架前需要把 `compileSdk` / `targetSdk` 提到 35 或 36（Google Play 对新应用的要求），
   届时 AGP 也要一起升到 8.7 以上
-- 部分厂商 ROM（如 HyperOS）会忽略 `adb shell pm revoke`，测试权限流程需要卸载重装
+  

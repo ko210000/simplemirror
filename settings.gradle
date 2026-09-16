@@ -1,0 +1,19 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+// 项目名保持 ASCII，避免非 ASCII 名称在构建路径上引出编码问题；
+// 用户可见的应用名走 @string/app_name（极简镜子）。
+rootProject.name = "SimpleMirror"
+include ':app'

@@ -1,0 +1,38 @@
+# Gradle 构建产物与缓存
+.gradle/
+build/
+.kotlin/
+
+# 本机配置（含 SDK 绝对路径，不能提交）
+local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+
+# APK / AAB 等打包产物
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# 签名文件（后续加正式签名时避免误提交）
+*.jks
+*.keystore
+
+# 日志与崩溃转储
+*.log
+*.hprof
+
+# 操作系统杂项
+.DS_Store
+Thumbs.db
+
+# 真机验证时的 adb 截图，不是源码
+build-verify/
+
+# AI 编码工具的会话/计划文件，不是项目内容
+.zcode/

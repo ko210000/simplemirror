@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 用深色 MaterialComponents 主题（非 DayNight）：镜子界面恒为黑底，
+         跟随系统切成浅色会让 Material 控件配色和黑底打架。 -->
+    <style name="Theme.SimpleMirror" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorOnPrimary">@color/mirror_background</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorOnSecondary">@color/mirror_background</item>
+
+        <item name="android:windowBackground">@color/mirror_background</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+
+        <!-- 透明系统栏下不要系统自动加的对比度蒙层 -->
+        <item name="android:enforceStatusBarContrast" tools:targetApi="q">false</item>
+        <item name="android:enforceNavigationBarContrast" tools:targetApi="q">false</item>
+
+        <!-- 刘海屏全屏：内容延伸到挖孔区域 -->
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="o_mr1">shortEdges</item>
+    </style>
+
+</resources>

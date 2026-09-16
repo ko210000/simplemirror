@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- 深色圆形底 -->
+    <path
+        android:fillColor="#14171C"
+        android:pathData="M24,2 A22,22 0 0,1 24,46 A22,22 0 0,1 24,2 Z" />
+
+    <!-- 镜面 -->
+    <path
+        android:fillColor="#7FD4FF"
+        android:pathData="M17,7 L31,7 Q34,7 34,10 L34,29 Q34,32 31,32 L17,32 Q14,32 14,29 L14,10 Q14,7 17,7 Z" />
+
+    <!-- 镜面高光 -->
+    <path
+        android:fillAlpha="0.55"
+        android:fillColor="#FFFFFF"
+        android:pathData="M18.5,27.5 L25.5,10 L28,10 L20.5,28.5 Z" />
+
+    <!-- 支架立杆 -->
+    <path
+        android:fillAlpha="0.85"
+        android:fillColor="#FFFFFF"
+        android:pathData="M22,32 L26,32 L26,38 L22,38 Z" />
+
+    <!-- 支架底座 -->
+    <path
+        android:fillAlpha="0.85"
+        android:fillColor="#FFFFFF"
+        android:pathData="M15,38 L33,38 L33,41.5 Q33,42.5 32,42.5 L16,42.5 Q15,42.5 15,41.5 Z" />
+</vector>

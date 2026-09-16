@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 镜子界面永远是深色：纯黑背景最接近真实镜面，也不会在暗环境下刺眼 -->
+    <color name="mirror_background">#FF000000</color>
+
+    <color name="accent">#FF7FD4FF</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#B3FFFFFF</color>
+
+    <color name="panel_scrim">#CC000000</color>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">极简镜子</string>
+
+    <!-- 权限：首次拒绝 -->
+    <string name="message_title_permission">需要相机权限</string>
+    <string name="message_body_permission">极简镜子要使用前置摄像头才能显示镜像画面。相机画面只在本机处理，不会上传，也不会保存。</string>
+    <string name="action_grant">授予权限</string>
+
+    <!-- 权限：永久拒绝 -->
+    <string name="message_title_permission_denied">相机权限已被拒绝</string>
+    <string name="message_body_permission_denied">请在系统设置中为「极简镜子」开启相机权限，然后返回本应用。</string>
+    <string name="action_open_settings">去设置</string>
+
+    <!-- 无前置摄像头 -->
+    <string name="message_title_no_front_camera">没有可用的前置摄像头</string>
+    <string name="message_body_no_front_camera">此设备没有检测到前置摄像头，无法显示镜像画面。</string>
+
+    <!-- 相机错误 -->
+    <string name="message_title_camera_error">相机启动失败</string>
+    <string name="message_body_camera_error_format">相机可能正被其他应用占用。请关闭其他使用相机的应用后重试。\n\n%1$s</string>
+    <string name="action_retry">重试</string>
+</resources>

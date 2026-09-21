@@ -20,4 +20,32 @@
     <string name="message_title_camera_error">相机启动失败</string>
     <string name="message_body_camera_error_format">相机可能正被其他应用占用。请关闭其他使用相机的应用后重试。\n\n%1$s</string>
     <string name="action_retry">重试</string>
+    
+    <!-- 拍照 -->
+    <string name="capture">拍照</string>
+
+    <!-- 夜间补光 -->
+    <string name="fill_light">夜间补光</string>
+    <string name="brightness_adjust">亮度调节</string>
+    <string name="exposure_adjust">曝光调节</string>
+    
+    <!-- 照片查看器 -->
+    <string name="view_photo">查看照片</string>
+    <string name="back">返回</string>
+    <string name="delete_photo">删除照片</string>
+    
+    <!-- 设置页面 -->
+    <string name="mirror_setting">镜像模式</string>
+    <string name="mirror_setting_desc">启用后，摄像头画面会水平镜像显示</string>
+    <string name="keep_screen_on_setting">屏幕常亮</string>
+    <string name="keep_screen_on_setting_desc">开启后，屏幕将保持常亮状态</string>
+    <string name="save_to_gallery_setting">存入公共相册</string>
+    <string name="save_to_gallery_setting_desc">开启后照片保存到系统图库的「极简镜子」目录，关闭则保存在应用私有目录</string>
+    
+    <!-- 照片管理 -->
+    <string name="photo_gallery">相册</string>
+    <string name="no_photos">暂无照片</string>
+    <string name="delete_confirm_body">要删除这张照片吗？删除后无法恢复。</string>
+    <string name="action_cancel">取消</string>
+    <string name="delete_failed">删除失败</string>
 </resources>

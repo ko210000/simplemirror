@@ -10,4 +10,8 @@
     <color name="text_secondary">#B3FFFFFF</color>
 
     <color name="panel_scrim">#CC000000</color>
+    
+    <!-- 拍照按钮 -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray_600">#757575</color>
 </resources>

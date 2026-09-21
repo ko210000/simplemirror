@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mirror_background">
+
+    <!-- 高度必须 wrap_content：GridLayoutManager 下 match_parent 会被量成
+         整个列表高度，格子变成拉长的竖条。adjustViewBounds 让格子保持照片比例。 -->
+    <ImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" />
+
+</FrameLayout>

@@ -17,6 +17,85 @@
         android:layout_height="match_parent"
         app:scaleType="fillCenter" />
 
+    <!-- 左侧：屏幕亮度调节条（向上更亮）。避开顶部工具栏和底部拍照按钮。 -->
+    <com.fei.simplemirror.VerticalSeekBar
+        android:id="@+id/brightnessSlider"
+        android:layout_width="36dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginBottom="152dp"
+        android:max="100"
+        android:contentDescription="@string/brightness_adjust" />
+
+    <!-- 右侧：相机曝光调节条（向上更亮），相机就绪后才启用 -->
+    <com.fei.simplemirror.VerticalSeekBar
+        android:id="@+id/exposureSlider"
+        android:layout_width="36dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginBottom="152dp"
+        android:enabled="false"
+        android:contentDescription="@string/exposure_adjust" />
+
+    <!-- 顶部工具栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_gravity="top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/panel_scrim"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <Button
+            android:id="@+id/galleryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/photo_gallery"
+            android:textColor="@color/white"
+            style="@style/Widget.MaterialComponents.Button.TextButton" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/fillLightButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_fill_light"
+            android:contentDescription="@string/fill_light"
+            android:alpha="0.5" />
+
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_settings"
+            android:contentDescription="设置" />
+
+    </LinearLayout>
+
+    <!-- 拍照按钮 -->
+    <ImageButton
+        android:id="@+id/captureButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/bg_capture_button"
+        android:contentDescription="@string/capture"
+        android:src="@drawable/ic_camera"
+        android:visibility="gone" />
+
     <!-- 权限说明 / 无前置摄像头 / 相机错误的统一提示层，默认隐藏 -->
     <LinearLayout
         android:id="@+id/messagePanel"
